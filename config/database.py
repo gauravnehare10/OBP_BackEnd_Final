@@ -19,6 +19,7 @@ new_mortgage_collection = db.new_mortgage_details
 
 aisp_accounts_consents = db.aisp_account_consents
 aisp_auth_tokens = db.aisp_auth_tokens
+
 accounts = db.accounts
 transactions = db.transactions
 beneficiaries = db.beneficiaries

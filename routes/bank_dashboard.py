@@ -7,7 +7,7 @@ from schemas.aisp_auth import get_account_data
 from schemas.bank_auth import check_bank_authorization
 from models.user_models import User
 from typing import List
-from collections import defaultdict
+from schemas.bank_data import get_data, check_bank_authorization
 
 router = APIRouter()
 
@@ -183,3 +183,4 @@ async def get_beneficiaries(bank: str, current_user: User=Depends(get_current_us
         beneficiary.pop("_id")
         
     return beneficiaries_data
+
